@@ -1,8 +1,12 @@
 #include "Node.h"
+#include "Student.h"
+#include <cstdlib>
+
+using namespace std;
 
 Node::Node(){
-    next = null;
-    last = null;
+    next = NULL;
+    last = NULL;
 }
 
 Node::~Node(){
@@ -12,26 +16,26 @@ Node::~Node(){
  */
 }
 
-void setStudent(Student* newStudent){
+void Node::setStudent(Student* newStudent){
     student = newStudent;
 }
 
-Student* getStudent(){
+Student* Node::getStudent(){
     return student;
 }
 
-void setNext(Node* newNode){
+void Node::setNext(Node* newNode){
     next = newNode;
 }
 
-Node* getNext(){
+Node* Node::getNext(){
     return next;
 }
 
-void setLast(Node* newNode){
+void Node::setLast(Node* newNode){
     last = newNode;
 }
 
-Node* getLast(){
+Node* Node::getLast(){
     return last;
 }
