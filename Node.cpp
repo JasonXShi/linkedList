@@ -4,16 +4,14 @@
 
 using namespace std;
 
-Node::Node(){
+Node::Node(Student* newStudent){
     next = NULL;
     last = NULL;
+    student = newStudent;
 }
 
 Node::~Node(){
-/*
- * delete 
- *
- */
+    delete student;
 }
 
 void Node::setStudent(Student* newStudent){
